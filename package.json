@@ -1,0 +1,26 @@
+{
+	"name": "overlayShade",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "pm2 start index.js --name overlayShade",
+		"stop": "pm2 stop overlayShade",
+		"restart": "pm2 restart overlayShade",
+		"logs": "pm2 logs overlayShade",
+		"delete": "pm2 delete overlayShade",
+		"list": "pm2 status overlayShade",
+		"monit": "pm2 monit"
+	},
+	"author": "afiqzudinhadi",
+	"license": "ISC",
+	"dependencies": {
+		"canvas": "^2.11.2",
+		"dotenv": "^16.4.5",
+		"face-api.js": "^0.22.2",
+		"fs": "^0.0.1-security",
+		"mongodb": "^6.5.0",
+		"node-telegram-bot-api": "^0.64.0",
+		"pm2": "^5.3.1"
+	}
+}
